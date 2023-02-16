@@ -2,3 +2,8 @@
 node_modules
 .tmp
 npm-debug.log
+# production
+**/*/build
+**/*/dist
+**/*/.parcel-cache
+.parcel-cache
