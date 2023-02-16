@@ -1,0 +1,48 @@
+{
+  "name": "example-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./public/index.html",
+  "scripts": {
+    "build": "rollup --config -w"
+  },
+  "author": "mor10",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-css-modules": "^4.7.11",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@types/react": "^18.0.27",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.1",
+    "postcss": "^8.4.21",
+    "postcss-nested": "^6.0.0",
+    "postcss-preset-env": "^8.0.0",
+    "rollup": "^3.12.1",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-serve": "^2.0.2",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0"
+  }
+}
