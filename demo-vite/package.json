@@ -12,11 +12,6 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
   "browserslist": {
     "production": [
       ">0.2%",

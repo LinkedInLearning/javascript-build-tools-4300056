@@ -1,18 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from './Image';
 import styles from './Collection.module.css';
 
 export const CollectionItem = ({ data }) => {
   return (
     <div data-full-img={data.dataFullImg}>
-      <dt id={styles['name-delores']}>{data.name}</dt>
+      <dt id={`name-${data.name}`}>{data.name}</dt>
       <dd className={styles.title}>{data.title}</dd>
       <dd className={styles.avatar}>
-        <img
-          src={data.avatar.src}
-          srcSet={data.avatar.srcSet}
-          width={data.avatar.width}
-          height={data.avatar.height}
+        <Image
+          imgData={{
+            root: data.avatar.root,
+            width: data.avatar.width,
+            height: data.avatar.height
+          }}
+          folder="characters"
+          type="png"
           alt={data.avatar.alt}
         />
       </dd>

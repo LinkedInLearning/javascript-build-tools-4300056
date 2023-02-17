@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CollectionItem from './CollectionItem';
+import Image from './Image';
 import styles from './Collection.module.css';
 
 export const Collection = ({ data }) => {
   return (
     <section className={`${styles.collection} ${styles[data.className]}`}>
       <header>
-        <img
-          src={data.header.logo.src}
-          width={data.header.logo.width}
-          height={data.header.logo.height}
+        <Image
+          imgData={{
+            root: data.header.logo.root,
+            width: data.header.logo.width,
+            height: data.header.logo.height
+          }}
+          folder={null}
+          type="svg"
           alt={data.header.logo.alt}
         />
         <h1>{data.header.title}</h1>
@@ -34,8 +39,8 @@ export const Collection = ({ data }) => {
   );
 };
 
-export default Collection;
-
 Collection.propTypes = {
   data: PropTypes.object.isRequired
 };
+
+export default Collection;

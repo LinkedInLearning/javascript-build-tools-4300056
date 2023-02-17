@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from './Image';
 import styles from './Footer.module.css';
 
 export const Footer = () => {
@@ -25,32 +26,53 @@ export const Footer = () => {
         <ul>
           <li>
             <a href="#" target="_blank">
-              <img src="images/icon-instagram-white.svg" width="30" height="30" alt="Instagram" />
+              <Image
+                imgData={{ root: 'icon-instagram-white', width: 30, height: 30 }}
+                folder={null}
+                type="svg"
+                alt="Instagram"
+              />
             </a>
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="images/icon-facebook-white.svg" width="30" height="30" alt="Facebook" />
+              <Image
+                imgData={{ root: 'icon-facebook-white', width: 30, height: 30 }}
+                folder={null}
+                type="svg"
+                alt="Facebook"
+              />
             </a>
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="images/icon-twitter-white.svg" width="30" height="30" alt="Twitter" />
+              <Image
+                imgData={{ root: 'icon-twitter-white', width: 30, height: 30 }}
+                folder={null}
+                type="svg"
+                alt="Twitter"
+              />
             </a>
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="images/icon-youtube-white.svg" width="30" height="30" alt="YouTube" />
+              <Image
+                imgData={{ root: 'icon-youtube-white', width: 30, height: 30 }}
+                folder={null}
+                type="svg"
+                alt="YouTube"
+              />
             </a>
           </li>
         </ul>
       </figure>
-      <img
-        src="images/logo-big-star-H.svg"
-        width="120"
-        height="65"
+      <Image
+        imgData={{ root: 'logo-big-star-H', width: 120, height: 65 }}
+        folder={null}
+        type="svg"
         alt="Logo of Big Star Collectibles"
       />
+
       <p>
         <small>
           &copy; Big Star Collectibles, Inc. &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp;{' '}

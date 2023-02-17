@@ -1,6 +1,8 @@
 import React from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
+import Image from './Image';
+import '../../node_modules/@splidejs/react-splide/dist/css/splide-core.min.css';
+import '../../node_modules/@splidejs/react-splide/dist/css/splide.min.css';
 import './Banner.css';
 
 export const Banner = () => {
@@ -9,22 +11,19 @@ export const Banner = () => {
       <SplideTrack>
         <SplideSlide className="big-star">
           <div className="wrapper">
-            <img
-              src="images/logo-big-star-H-purple.svg"
-              width="298"
-              height="161"
-              alt="Logo of Big Star Collectibles"
+            <Image
+              imgData={{ root: 'logo-big-star-H-purple', width: 298, height: 161 }}
+              folder={null}
+              type="svg"
             />
             <a href="Product-List.html" className="button lg solid gold">
               Shop now
             </a>
           </div>
-          <img
-            src="images/hero-big-star.jpg"
-            srcSet="images/hero-big-star.jpg 1x, images/hero-big-star@2x.jpg 2x, images/hero-big-star@3x.jpg 3x"
-            width="485"
-            height="317"
-            alt=""
+          <Image
+            imgData={{ root: 'hero-big-star', width: 485, height: 317 }}
+            folder={null}
+            type="jpg"
           />
         </SplideSlide>
         <SplideSlide className="sale">
@@ -35,12 +34,10 @@ export const Banner = () => {
               See items on sale
             </a>
           </div>
-          <img
-            src="images/hero-sale.jpg"
-            srcSet="images/hero-sale.jpg 1x, images/hero-sale@2x.jpg 2x, images/hero-sale@3x.jpg 3x"
-            width="502"
-            height="367"
-            alt=""
+          <Image
+            imgData={{ root: 'hero-sale', width: 502, height: 367 }}
+            folder={null}
+            type="jpg"
           />
         </SplideSlide>
         <SplideSlide className="gifts">
@@ -54,21 +51,29 @@ export const Banner = () => {
               Shop now
             </a>
           </div>
-          <img
-            src="images/hero-gifts.jpg"
-            srcSet="images/hero-gifts.jpg 1x, images/hero-gifts@2x.jpg 2x, images/hero-gifts@3x.jpg 3x"
-            width="750"
-            height="465"
-            alt=""
+          <Image
+            imgData={{ root: 'hero-gifts', width: 750, height: 465 }}
+            folder={null}
+            type="jpg"
           />
         </SplideSlide>
       </SplideTrack>
       <div className="splide__arrows">
         <button className="splide__arrow splide__arrow--prev">
-          <img src="images/icon-chevron-left-white.svg" alt="Previous" />
+          <Image
+            imgData={{ root: 'icon-chevron-left-white', width: 50, height: 50 }}
+            folder={null}
+            type="svg"
+            alt="Previous"
+          />
         </button>
         <button className="splide__arrow splide__arrow--next">
-          <img src="images/icon-chevron-left-white.svg" alt="Next" />
+          <Image
+            imgData={{ root: 'icon-chevron-left-white', width: 50, height: 50 }}
+            folder={null}
+            type="svg"
+            alt="Next"
+          />
         </button>
       </div>
     </Splide>

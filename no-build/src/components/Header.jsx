@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from './Image';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -6,10 +7,10 @@ const Header = () => {
     <>
       <header id={styles.banner}>
         <a href="./">
-          <img
-            src="images/logomark-big-star-white.svg"
-            width="43"
-            height="50"
+          <Image
+            imgData={{ root: 'logomark-big-star-white', width: 43, height: 50 }}
+            folder={null}
+            type="svg"
             alt="Big Star Collectibles"
           />
         </a>
@@ -207,12 +208,23 @@ const Header = () => {
             </li>
           </ul>
           <button type="button">
-            <img src="images/icon-menu.svg" width="30" height="24" alt="Site Navigation Panel" />
+            Big Star Collectibles
+            <Image
+              imgData={{ root: 'icon-menu', width: 30, height: 24 }}
+              folder={null}
+              type="svg"
+              alt="Site Navigation Panel"
+            />
           </button>
         </nav>
         <div id={styles['search-widget']}>
           <button type="button" aria-expanded="false" aria-controls="search-popup">
-            <img src="images/icon-search-white.svg" width="36" height="36" alt="Search Form" />
+            <Image
+              imgData={{ root: 'icon-search-white', width: 36, height: 36 }}
+              folder={null}
+              type="svg"
+              alt="Search Form"
+            />
           </button>
           <div id={styles['search-popup']} aria-hidden="true">
             <form method="post" role="search">
@@ -228,23 +240,32 @@ const Header = () => {
               </button>
             </form>
             <button type="button" tabIndex="-1">
-              <img src="images/icon-xmark.svg" width="26" height="26" alt="Close" />
+              <Image
+                imgData={{ root: 'icon-xmark', width: 26, height: 26 }}
+                folder={null}
+                type="svg"
+                alt="Close"
+              />
             </button>
           </div>
         </div>
         <a href="#">
-          <img src="images/icon-user-v01-white.svg" width="36" height="36" alt="Account" />
+          <Image
+            imgData={{ root: 'icon-user-v01-white', width: 36, height: 36 }}
+            folder={null}
+            type="svg"
+            alt="Account"
+          />
         </a>
         <button type="button">
-          <img
-            src="images/icon-shopping-cart-v01-white.svg"
-            width="36"
-            height="33"
+          <Image
+            imgData={{ root: 'icon-shopping-cart-v01-white', width: 36, height: 33 }}
+            folder={null}
+            type="svg"
             alt="Cart Panel"
           />
-          <span className={styles['visually-hidden']}>(</span>
-          <span className={styles.num}>6</span>{' '}
-          <span className={styles['visually-hidden']}>items)</span>
+          <span className="visually-hidden">(</span>
+          <span className={styles.num}>6</span> <span className="visually-hidden">items)</span>
         </button>
       </header>
     </>

@@ -1,13 +1,17 @@
 {
   "name": "no-build",
   "version": "1.0.0",
-  "description": "No build process",
-  "main": "postcss.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Example React project with no build tool.",
+  "main": "src/index.html",
   "author": "@mor10",
-  "license": "ISC",
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-css-modules": "^4.7.11",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -19,14 +23,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-css-modules": "^4.7.11",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
