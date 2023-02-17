@@ -1,8 +1,9 @@
 {
-  "name": "bigstar",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "#",
+  "name": "demo-vite",
+  "version": "1.0.0",
+  "description": "Example React project with no build tool.",
+  "main": "src/index.html",
+  "author": "@mor10",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "prop-types": "^15.8.1",

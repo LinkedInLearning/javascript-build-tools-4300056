@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "@mor10",
+  "license": "ISC",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development"
   },
-  "author": "@mor10",
-  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",

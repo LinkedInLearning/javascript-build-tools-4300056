@@ -1,14 +1,14 @@
 {
-  "name": "no-build",
+  "name": "example-parcel",
   "version": "1.0.0",
-  "description": "No build process",
-  "main": "postcss.config.js",
+  "description": "Example of a basic React app with Parcel.",
+  "main": "src/index.html",
+  "author": "@mor10",
+  "license": "ISC",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build"
   },
-  "author": "@mor10",
-  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",

@@ -1,8 +1,15 @@
 {
-  "name": "bigstar",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "#",
+  "name": "example-lite",
+  "version": "1.0.0",
+  "description": "Example of a basic React app with Rollup.",
+  "main": "./public/index.html",
+  "author": "mor10",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "prop-types": "^15.8.1",
@@ -11,11 +18,6 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "vite": "^4.0.4"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
   },
   "browserslist": {
     "production": [

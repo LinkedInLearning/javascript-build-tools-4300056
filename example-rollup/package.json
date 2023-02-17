@@ -1,14 +1,13 @@
 {
   "name": "example-rollup",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
+  "description": "Example of a basic React app with Rollup.",
   "main": "./public/index.html",
+  "author": "mor10",
+  "license": "ISC",
   "scripts": {
     "build": "rollup --config -w"
   },
-  "author": "mor10",
-  "license": "ISC",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "prop-types": "^15.8.1",
