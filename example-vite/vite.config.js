@@ -7,9 +7,9 @@ export default defineConfig({
   build: { outDir: '../dist' },
   server: {
     host: true,
-        port: 5173,
-    hmr: { clientPort: 5173 },
-  }
+    port: 5173,
+    hmr: { clientPort: 5173 }
+  },
   plugins: [
     viteImagemin({
       optipng: {
