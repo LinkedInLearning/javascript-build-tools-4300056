@@ -5,6 +5,7 @@
   "main": "./public/index.html",
   "author": "mor10",
   "license": "ISC",
+  "type": "module",
   "scripts": {
     "build": "rollup --config -w"
   },
