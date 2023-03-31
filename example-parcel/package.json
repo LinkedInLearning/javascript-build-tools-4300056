@@ -2,7 +2,7 @@
   "name": "example-parcel",
   "version": "1.0.0",
   "description": "Example of a basic React app with Parcel.",
-  "main": "src/index.html",
+  "main": "src/index.jsx",
   "author": "@mor10",
   "license": "ISC",
   "scripts": {
